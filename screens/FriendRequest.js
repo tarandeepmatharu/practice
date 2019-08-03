@@ -19,7 +19,7 @@ export default class FriendRequest extends Component{
 
     static navigationOptions=({navigation})=>{
             return {
-                headerRight:(<TouchableOpacity title="b" onPress={()=>navigation.navigate('Firebase')}><Text style={{color:'red',marginRight:300}}>bb</Text></TouchableOpacity>)
+               header:<Exp/>
             }
         }
 
