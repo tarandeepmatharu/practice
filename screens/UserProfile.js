@@ -17,6 +17,10 @@ export default class UserProfile extends Component {
  issuefix=()=>{
      console.log("nwissuefix");
  }
+ 
+ chaklao=()=>{
+     
+ }
   render() {
     return (
         
