@@ -15,7 +15,7 @@ export default class UserProfile extends Component {
       console.log("bugfix");
   }
  issuefix=()=>{
-     console.log("sexyissuefix");
+     console.log("nwissuefix");
  }
   render() {
     return (
