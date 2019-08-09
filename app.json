@@ -13,9 +13,10 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/fblogo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/facebook.png",
+      "width":"100",
+      "height":"100",
+      "backgroundColor": "#2C89DC"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

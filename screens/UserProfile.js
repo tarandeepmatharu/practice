@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text,StyleSheet,Image,ScrollView} from 'react-native';
-import {AntDesign} from '@expo/vector-icons';
+import {AntDesign,Ionicons} from '@expo/vector-icons';
 
 
 export default class UserProfile extends Component {
@@ -55,6 +55,101 @@ export default class UserProfile extends Component {
             </View>
         </View>
       </View>
+
+        <ScrollView contentContainerStyle={{marginTop:20,borderColor:"red"}}>
+      <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.2</Text>
+            <Image source={require('../assets/sampleProfile.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Jessica chues</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+            
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.3</Text>
+            <Image source={require('../assets/johndoe.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>John doe</Text>
+                <Text style={styles.usersImproveText}>Build Muscle</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.4</Text>
+            <Image source={require('../assets/johndoe.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Jane Doe</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.5</Text>
+            <Image source={require('../assets/girl.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}> 
+                <Text style={styles.usersName}>Priscilla chan</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.6</Text>
+            <Image source={require('../assets/sampleProfile.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Tiffany</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.7</Text>
+            <Image source={require('../assets/sampleProfile.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Jessica chues</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.8</Text>
+            <Image source={require('../assets/sampleProfile.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Jessica chues</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.9</Text>
+            <Image source={require('../assets/sampleProfile.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Jessica chues</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.2</Text>
+            <Image source={require('../assets/sampleProfile.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Jessica chues</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+
+        <View style={styles.usersListContainer}>
+        <Text style={styles.usersRankText}>No.2</Text>
+            <Image source={require('../assets/sampleProfile.jpg')} style={styles.usersListImage}/>
+            <View style={styles.usersInfoWrapper}>
+                <Text style={styles.usersName}>Jessica chues</Text>
+                <Text style={styles.usersImproveText}>Lose fat</Text>
+            </View>
+        </View>
+        <View style={{height:400}}>
+            </View>
+        </ScrollView>
       </View>
     
     );
@@ -64,10 +159,13 @@ export default class UserProfile extends Component {
 const styles=StyleSheet.create({
    
     backgroundImage:{
-        width:400,
+        width:450,
+        marginLeft:-20
+        
+    
     },
     profileBackgroundWrapper:{
-        marginTop:-270
+        marginTop:-240
     },
     infoContainer:{
         height:300,
@@ -75,7 +173,8 @@ const styles=StyleSheet.create({
        borderColor:"red",
         zIndex:10,        
         position:'absolute',
-        top:25,
+        top:40,
+        left:7
     },
     menuIconAndName:{
        
@@ -125,5 +224,41 @@ const styles=StyleSheet.create({
         fontSize:16,
         alignSelf:'center',
         fontWeight:"bold"
+    },
+    usersListContainer:{
+        flexDirection:"row",
+        borderColor:"#eaeaea",
+        borderWidth:1,
+        padding:9,
+        margin:10,
+        marginTop:30,
+        borderRadius:5
+           
+    },
+    usersRankText:{
+        color:"#60C3F9",
+        alignSelf:'center',
+        fontSize:20,
+        fontWeight:'bold'
+    
+    },
+    usersListImage:{
+        borderRadius:50,
+        height:90,
+        width:90,
+        marginLeft:20
+
+       
+    },
+    usersInfoWrapper:{
+        marginTop:10,
+        marginLeft:20
+
+    },
+    usersName:{
+        fontWeight:'bold'
+    },
+    usersImproveText:{
+        alignSelf:'center'
     }
 });
