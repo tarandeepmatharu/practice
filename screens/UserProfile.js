@@ -3,11 +3,16 @@ import { View, Text,StyleSheet,Image,ScrollView} from 'react-native';
 import {AntDesign,Ionicons} from '@expo/vector-icons';
 
 
+
 export default class UserProfile extends Component {
   constructor(props) {
     super(props);
     this.state = {
     };
+  }
+
+  bugfix=()=>{
+      console.log("bugfix");
   }
 
   render() {
