@@ -25,7 +25,7 @@ export default class UserProfile extends Component {
          <Text style={{color:"white",position:'absolute',top:70,left:30,fontSize:19,}}>No.1</Text>
          <View style={styles.dpInfoContainer}>
              <Image source={require('../assets/sampleProfile.jpg')} style={styles.profilePicture}/>
-             <Text style={styles.userName}>jessica Chues</Text>
+             <Text style={styles.userName}>js essica Jones</Text>
              <Text style={styles.userFatInfo}>Reduced fat</Text>
         </View>
         <View style={styles.fatAnalyticsContainer}>
