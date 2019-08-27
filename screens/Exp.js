@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {View,Text,StyleSheet,Button} from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 export default class Exp extends Component{
     render(){
         return(
@@ -17,7 +18,7 @@ const styles=StyleSheet.create({
         backgroundColor:"#6B52AE",
         color:"white",
         padding:15,
-        marginTop:22
+        marginTop:hp(3.8)
     },
     text:{
         color:"white",

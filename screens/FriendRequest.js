@@ -3,6 +3,7 @@ import {Text,View,StyleSheet,ScrollView,FlatList,Image,TouchableOpacity} from 'r
 import {Card,Button,Icon} from 'react-native-elements';
 import {AntDesign} from '@expo/vector-icons'
 import Exp from './Exp';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 String.prototype.capitalize = function() {
     return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
@@ -53,7 +54,7 @@ export default class FriendRequest extends Component{
                 data={this.state.data}
                 renderItem={({item})=>{
                     return(
-                        <Card  containerStyle={{width:300,height:500,borderRadius:10,padding:0}}
+                        <Card  containerStyle={{width:wp(70),height:wp(100),borderRadius:10,padding:0}}
                         
                         >
                             <Image source={{uri:item.avatar_url}} style={styles.image}/>
@@ -86,17 +87,18 @@ const styles=StyleSheet.create({
     },
     name:{
         fontSize:20,
-        marginLeft:20,
+        marginLeft:wp(2),
         marginTop:10,
         marginBottom:25
     },
     buttonContainer:{
         flexDirection:"row",
         justifyContent:"space-around",
-        marginBottom:20
+        borderWidth:3,
+        marginBottom:0
     },
     image:{
-        height:300,
+        height:hp(30),
        borderTopLeftRadius:5,
        borderTopRightRadius:5
     }
